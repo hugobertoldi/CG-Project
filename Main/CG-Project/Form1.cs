@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace CG_Project
 {
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Versión 1.0 hecha por Hugo Gutiérrez");
         }
     }
 }
