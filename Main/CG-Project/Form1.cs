@@ -16,5 +16,19 @@ namespace CG_Project
         {
             InitializeComponent();
         }
+
+        private void botonAgregarCliente_Click(object sender, EventArgs e)
+        {
+            AgregarCliente nuevaVentana = new AgregarCliente();
+
+            nuevaVentana.Show();
+        }
+
+        private void botonAgregarProducto_Click(object sender, EventArgs e)
+        {
+            AgregarProducto nuevaVentana = new AgregarProducto();
+
+            nuevaVentana.Show();
+        }
     }
 }

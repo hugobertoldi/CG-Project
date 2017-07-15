@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindowsPCG));
             this.botonAgregarCliente = new System.Windows.Forms.Button();
             this.botonAgregarProducto = new System.Windows.Forms.Button();
             this.botonAgregarServicioVendido = new System.Windows.Forms.Button();
             this.botonVisualizarClientes = new System.Windows.Forms.Button();
             this.botonVisualizarProductos = new System.Windows.Forms.Button();
             this.botonVisualizarEstadisticas = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // botonAgregarCliente
@@ -50,6 +51,7 @@
             this.botonAgregarCliente.TabIndex = 0;
             this.botonAgregarCliente.Text = "CLIENTE";
             this.botonAgregarCliente.UseVisualStyleBackColor = false;
+            this.botonAgregarCliente.Click += new System.EventHandler(this.botonAgregarCliente_Click);
             // 
             // botonAgregarProducto
             // 
@@ -64,6 +66,7 @@
             this.botonAgregarProducto.TabIndex = 1;
             this.botonAgregarProducto.Text = "PRODUCTO";
             this.botonAgregarProducto.UseVisualStyleBackColor = false;
+            this.botonAgregarProducto.Click += new System.EventHandler(this.botonAgregarProducto_Click);
             // 
             // botonAgregarServicioVendido
             // 
@@ -121,24 +124,50 @@
             this.botonVisualizarEstadisticas.Text = "ESTADISTICAS";
             this.botonVisualizarEstadisticas.UseVisualStyleBackColor = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(40)))), ((int)(((byte)(80)))));
+            this.label1.Location = new System.Drawing.Point(200, 144);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(186, 41);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "AGREGAR";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(40)))), ((int)(((byte)(80)))));
+            this.label2.Location = new System.Drawing.Point(616, 144);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(208, 41);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "VISUALIZAR";
+            // 
             // MainWindowsPCG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1008, 561);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.botonVisualizarEstadisticas);
             this.Controls.Add(this.botonVisualizarProductos);
             this.Controls.Add(this.botonVisualizarClientes);
             this.Controls.Add(this.botonAgregarServicioVendido);
             this.Controls.Add(this.botonAgregarProducto);
             this.Controls.Add(this.botonAgregarCliente);
+            this.MinimumSize = new System.Drawing.Size(512, 300);
             this.Name = "MainWindowsPCG";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -150,6 +179,8 @@
         private System.Windows.Forms.Button botonVisualizarClientes;
         private System.Windows.Forms.Button botonVisualizarProductos;
         private System.Windows.Forms.Button botonVisualizarEstadisticas;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
